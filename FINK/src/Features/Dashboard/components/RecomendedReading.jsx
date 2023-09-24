@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {StyleSheet, Text, TouchableOpacity, View, Image, Linking} from 'react-native';
 
-const App = () => {
+const RecomendedReading = () => {
   const [count, setCount] = useState(0);
   const onPress = () => setCount(prevCount => prevCount + 1);
   const openWebPage = () => {
@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
     height: 170, 
     marginTop: 32,
     paddingHorizontal: 24, 
+    marginBottom: 60,
   },
 
   imageContainer: {
@@ -54,6 +55,8 @@ const styles = StyleSheet.create({
     height: 80,
     backgroundColor: '#E3E3E3',
     borderWidth: 3,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 
   view2: {
@@ -65,8 +68,10 @@ const styles = StyleSheet.create({
     borderTopWidth: 3,
     borderBottomWidth: 3,
     height: 80,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
-export default App;
+export default RecomendedReading;
 
