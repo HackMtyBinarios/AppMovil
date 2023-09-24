@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 import {StyleSheet, Text, TouchableOpacity, View, Image, Linking} from 'react-native';
 
 const RecomendedReading = () => {
-  const [count, setCount] = useState(0);
-  const onPress = () => setCount(prevCount => prevCount + 1);
   const openWebPage = () => {
     const url = 'https://www.eleconomista.com.mx/mercados/Dolar-hoy-precio-del-22-de-septiembre-de-2023-20230922-0025.html'; // Replace with the desired URL
     Linking.openURL(url)
@@ -33,7 +31,7 @@ const styles = StyleSheet.create({
     width: '100%', 
     height: 170, 
     marginTop: 32,
-    paddingHorizontal: 24, 
+    paddingHorizontal: 16, 
     marginBottom: 60,
   },
 

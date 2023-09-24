@@ -7,7 +7,7 @@ const Stack = createNativeStackNavigator();
 // Components
 import Dashboard from '../../../Features/Dashboard/Views/Dashboard';
 import Learning from '../../../Features/Learning/Views/Learning';
-import Coach from '../../../Features/Coach/Views/Coach';
+import Trend from '../../../Features/Trend/Views/Trend';
 
 const NavigationComponent = () => {
   return (
@@ -18,20 +18,12 @@ const NavigationComponent = () => {
           component={Learning}
         />
         <Stack.Screen
-          name="Newspaper"
-          component={Dashboard}
-        />
-        <Stack.Screen
           name="Home"
           component={Dashboard}
         />
         <Stack.Screen
-          name="Search"
-          component={Coach}
-        />
-        <Stack.Screen
           name="Trend"
-          component={Dashboard}
+          component={Trend}
         />
       </Stack.Navigator>
     </NavigationContainer>

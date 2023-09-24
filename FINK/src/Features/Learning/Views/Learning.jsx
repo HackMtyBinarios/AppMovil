@@ -94,36 +94,12 @@ const Learning = () => {
         </TouchableOpacity>
         <TouchableOpacity
           style={{marginHorizontal: 8, width: 40, height: 40}}
-          onPress={() => navigation.navigate('Newspaper')}>
-          <Image
-            source={
-              !Newspaper
-                ? require('../../../GlobalComponents/Navigation/Assets/newspaper.png')
-                : require('../../../GlobalComponents/Navigation/Assets/newspaperFilled.png')
-            }
-            style={{width: '100%', height: '100%'}}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={{marginHorizontal: 8, width: 40, height: 40}}
           onPress={() => navigation.navigate('Home')}>
           <Image
             source={
               !Home
                 ? require('../../../GlobalComponents/Navigation/Assets/home.png')
                 : require('../../../GlobalComponents/Navigation/Assets/homeFilled.png')
-            }
-            style={{width: '100%', height: '100%'}}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={{marginHorizontal: 8, width: 40, height: 40}}
-          onPress={() => navigation.navigate('Search')}>
-          <Image
-            source={
-              !Search
-                ? require('../../../GlobalComponents/Navigation/Assets/search.png')
-                : require('../../../GlobalComponents/Navigation/Assets/searchFilled.png')
             }
             style={{width: '100%', height: '100%'}}
           />
